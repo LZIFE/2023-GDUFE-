@@ -1,0 +1,40 @@
+
+body {
+    /* Define a gradient background */
+    background: linear-gradient(to right, #d0e9c6, #2193b0); /* Example gradient */
+    /* Ensure the gradient covers the entire page */
+    height: 100vh;
+    margin: 0;
+    /* Add some padding for design */
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    /* Remove the default padding to better fit the buttons */
+    padding: 0;
+}
+
+
+/* Add your custom styles here */
+.btn-primary, .btn-success, .btn-warning {
+    /* For example, make the buttons squared */
+    border-radius: 50px;
+    /* Add some shadow for depth */
+    box-shadow: 5px 4px 8px rgba(1.5,1.5,1.5,2.1);
+    /* Make the buttons larger */
+    font-size: 124px;
+    padding: 20px 40px;
+    /* Transition effect for smooth hover */
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-warning:hover {
+    /* Change the shadow on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    /* Slightly lift the button on hover */
+    transform: translateY(-2px);
+}

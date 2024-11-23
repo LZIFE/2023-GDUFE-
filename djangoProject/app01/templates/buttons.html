@@ -1,0 +1,22 @@
+{% extends 'main_memu.html' %}
+{% block title %}Artistic Buttons{% endblock %}
+{% block content %}
+    <style>
+        .btn{
+            font-size: 50px;
+        }
+    </style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="{% url 'scholarship' %}" class="btn btn-primary btn-block btn-lg">奖学金申请</a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'submitproject' %}" class="btn btn-success btn-block btn-lg">项目申请</a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'teacher_evaluation' %}" class="btn btn-warning btn-block btn-lg">教职工评选</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
